@@ -3,68 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>formulários</title>
+    <link href="login.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <header>
     <h1>Trabalhe Conosco</h1>
-    <p>faça o seu login</p>
+    <p>Faça o seu cadastro</p>
+  </header>
 
     <form action="" method="post" ecntype="multipart/form-data">
 
       <div>
         <label for="">nome</label>
-        <input name="nome" required="required" placeholder="digite seu nome" type="text">
+        <input name="nome" required="required" class="label" placeholder="digite seu nome..." type="text">
       </div>
 
       <div>
-        <label for="">E-mail</label>
-        <input name="email" required="required" placeholder="digite seu e-mail" type="text">
+        <label for=""> E-mail</label>
+        <input name="email" required="required" class="label" placeholder="digite seu e-mail..." type="text">
       </div>
 
       <div>
-        <label for="">selecione sua cidade</label>
-        <select  required="required" name="cidade">
-          <option selected="selected" value="">selecione</option>
-          <option value="1">Belo Horizonte</option>
-          <option value="2">São Paulo</option>
-          <option value="3">Rio de janeiro</option>
-          <option value="4">Curitiba</option>
-          <option value="5">Santa Catarina</option>
-        </select>
+        <label for="">confirme E-mail</label>
+        <input name="email" required="required" class="label" placeholder="confirme seu e-mail..." type="text">
       </div>
 
       <div>
         <label for="">sua foto</label> 
-        <input required="required" name="foto" type="file">
+        <input required="required"  name="foto" class="value" type="file">
       </div>
 
       <div>
         <p>selecione:</p>
-        <label for="sexo1"><input name="sexo1" value="m" type="radio"> masculino</label>
-        <label for="sexo2"><input name="sexo2" value="f" type="radio"> feminino</label>
+        <label for="sexo1"><input  name="sexo1"  classe="radio" value="m" type="radio"> masculino</label>
+        <label for="sexo2"><input name="sexo2" classe="radio" value="f" type="radio"> feminino</label>
       </div>
 
+      
       <div>
-        <label for="">biografia</label><br>
-        <textarea name="biografia" placeholder="digite sua biografia" required="required" cols="30" rows="5"></textarea>
+        <label for="">carta</label><br>
+        <textarea  name="carta" placeholder="digite sua carta de apresentação... " class="label"required="required" cols="30" rows="5"></textarea>
       </div>
 
       <div>
         <label for="">senha</label> 
-        <input required="required" placeholderme="digite sua senha:" name="senha" type="password">
+        <input required="required" placeholderme="digite sua senha:" placeholder="digite sua senha... "  class="label"  name="senha" type="password">
+      </div>
+
+       <div>
+        <label for="">confirme senha:</label> 
+        <input required="required" placeholderme="confirme sua senha:" class="label"
+          placeholder="confirme sua senha... " name="senha" type="password">
       </div>
 
       <div>
         <label for="noticias">
-          <input name="newsletter" id="noticias" type="checkbox">
+          <input name="newsletter" classe="label" id="noticias" type="checkbox">
           deseja receber e-mails promocionais e noticias?</label> 
       </div>
 
       <div>
-        <button name="enviar" value="1" type="submit">enviar</button>
+        <button name="enviar" class="botton"  value="1" type="submit">enviar</button>
       </div
       
 
     </form>
     
+      
   </body>
 </html>
