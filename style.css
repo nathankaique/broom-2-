@@ -7,121 +7,60 @@
 }
 
 
-.form{
+body{
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fff;
-  padding: 3rem;
+  background-color: #dbdbdb;
+  padding: 13rem;
 }
-
-.input-group{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: espace-batween;
-  padding: 1rem 0;
-}
-
-.input-box{
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.1rem;
-}
-
-.input-box input{
-  margin: 0.6rem 0;
-  padding: 0.8rem 1.2rem;
-  border: none;
-  border-radius: 10px;
-  box-shadow: 1px 1px 6px #4d70ff1c;
-}
-
-.input-box input:focus-visible{
-  outline: 1px solid #3fa2ee00;
-}
-
-.input-box label,
-.gender-title h6{
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #0000c0;
-}
-
-.gender-group{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.62rem;
-  padding: 0 0.5rem;
-}
-
-.gender-input{
-  display: flex;
-  align-items: center;
-}
-
-.input-gender input{
-  margin-right: 0.35rem;
-}
-
-.gender-input label{
-  font-size: 0.81rem;
-  font-weight: 600;
-  color: #000000c0;
-}
-
-.continue-button button{
+body .label{
   width: 100%;
-  margin-top: 2.5rem;
+  height: 80px;
+  background-color: #35cfed;
+  border-radius: 43px;
+}
+
+html, body{
+  width: 95%;
+  overflow-x: hidden;
+}
+
+  
+form .label{
+  width: 500px;
+  height: 40px;
   border: none;
-  background-color: #1a53ff00;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius:20px 20px 20px 20px;
+  text-indent: 30px;
+  font-size: 1.1em;
+  margin-top: 1.2rem;
+  padding: 1%;
 }
 
-.continue-button button:hover{
-  background-color: #2942ff00;
+header{
+  width: 125%;
+  height: 200px;
+  background-image: linear-gradient(to bottom, #0400f0, #33d6ff);
+  border-radius: 35px;
+  font-size: 2.5em;
+  overflow-x: hidden;
 }
 
-.continue-button button a{
-  text-decoration: none;
-  font-size: 0.93rem;
-  font-weight: 500;
-  color: #fff;
+form .botton{
+  width: 200px;
+  height: 33px;
+  border: none;
+  border-radius:15px 15px 15px 15px;
+  text-indent: 3px;
+  font-size: 1.3em;
+  background-image: linear-gradient(to bottom, #0400f0, #33d6ff);
 }
-
-@media screen and(max-width: 1330px) {
-  .form-image{
-      display: none;
-  }
-  .container{
-      width: 50%;
-  }
-  .form{
-      width: 100%;
-  }
-}
-
-@media screen and(max-width: 1064px){
-  .container{
-    width: 90%;
-    height: auto;
-  }
-  .input-group{
-    flex-direction: column;
-    overflow-y: scroll;
-    flex-wrap: nowrap;
-    max-height: 10rem;
-    padding-right: 5rem;
-  }
-  .gender-inputs{
-    margin-top: 2rem;
-  }
-  .gender-group{
-    flex-direction: column;
-  }
-  .gender-input{
-    margin-top: 0.5rem;
-  }
+form .value {
+  margin-top: 1.6rem;
+  padding: 2%;
+  background-color: #35cfed;
+  border-radius:15px 15px 15px 15px;
 }
