@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'inter', sans-serif;
+}
+
+
+body{
+  width: 0%;
+  background-color: #43ceea;
+  padding: 0rem;
+}
+
+html, body{
+  width: 95%;
+  overflow-x: hidden;
+  position: relative;
+	margin-left: 8%;
+	margin-right: 8%;
+	padding-left: 12%;
+	font-size: 1.2em;
+  
+}
+
+header{
+  width: 115%;
+  height: 200px;
+  border-radius: 1px;
+  font-size: 2.0em;
+  overflow-x: hidden;
+}
+
