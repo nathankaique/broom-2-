@@ -1,263 +1,124 @@
-*{
-  marging: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  outline: none;
-  font-family: "Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif";
-  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-:root {
-  --dark-blue: #000a94;
-  --black: #05012e;
-  --gray: #43ceea;
-  --dark-purple: #48016b;
-}
- 
-html, body{
-  width: 100%;
-  overflow-x: hidden;
-  
-}
-
-header{
-  width: 100%;
-  height: 800px;
-  background-image: linear-gradient(to bottom, #0400f0, #33d6ff);
-  border-radius: 43px;
-}
-
-.content {
-  max-width: 1000px;
-  min-width: 300px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  padding: 70px;
-  
-}
-
-nav{
-  width: 125%;
-  height: 125px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand{
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-}
-
-nav ul{
-  display: flex;
-  flex-direction: row;
-}
-
-nav ul li{
-  list-style: none;
-  padding: 7px;
-  cursor: pointer;
-  
-}
-
-nav ul li a{
-  color: white;
-  text-decoration: none;
-}
-
-nav lu li a:hover{
-  color: #373838;
-}
-
-nav ul button{
-  border: 1px solid var(--black);
-  background: transparent;
-  padding: 8px 40px;
-  cursor: pointer;
-  margin-left: 30px;
-  color: white;
-  font-weight: bold;
-  border-radius: 60px;
-}
-
-nav ul button:hover{
-  transition: background, color 0.7s;
-  background: var(--dark-blue);
-  color: white;
-}
-
-.content .header-block{
-  max-width: 1000px;
-  min-width: 300px;
-  height: 450px;
-  background-image: linear-gradient(to bottom, var(--dark-blue), #409cf2);
-  border-radius: 8px;
-  box-shadow: 1px 0px 10px  0px rgba(0, 0, 0, 0.5);
-  -webkit-box-shadow: 1px 0px 10px  0px rgba(0, 0, 0, 0.5);
-  -mox-box-shadow: 1px 0px 10px  0px rgba(0, 0, 0, 0.5);
-  position: relative;
-  z-index: 10px;
-  padding: 10px;
-  
-}
-
-.header-block img{
-  width: 50%;
-  position: absolute;
-  right: 0%;
-  bottom:0%;
-  border-radius: 11px;
-}
-
-.header-block .text{
-  position: absolute;
-  bottom: 30%;
-  left: 5%;
-}
-                                             
-
-.header-block .text h2{
-  color: white;
-  margin-button: 50px;
-  text-align: right;
-  transform: translateX(40px);
-  transition: transform 0.9s;
-}
- 
-.header-block .text p{
-  max-width: 240px;
-  color: white;
-  text-align: right;
-  transform: translateX(44px);
-  transition: transform 0.4s;
-}
-
-  section .catalog{
-    width:100vw;
-    padding: 100px;
-    
-  }
-
-  
-
-  section .filter-card{
-    width: 980px;
-    height: 150px;
-    background: var(--gray);
-    border-radius:30px;
-    margin: 0 auto;
+body {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    min-height: 100vh;
     justify-content: center;
-  }
-  
-.search-input{
-  width: 700px;
-  height: 50px;
-  border: none;
-  border-radius: 4px 0px 0px 4px;
-  text-indent: 10px;
-  font-size: 1.1em;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.search-button{
-  width: 150px;
-  height: 50px;
-  border-radius: 0px 4px 4px 0px;
-  border: none; 
-  background: var(--black);
-  color: white;
-  cursor: pointer;
-  font-size: 1.1em;
-  transition: 0.2s ease;
+h1 {
+    color: #FFF;
+    margin: 20px 0;
 }
 
-.search-button:hover{
-  background: var(--gray);
-  color: var(--black);
+.busca {
+    display: flex;
+    width: 300px;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: #555;
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.busca button:hover {
+    background-color: #444;
 }
 
-.title-wrapper-catalog{
-  margin-top: 200px;
-  padding-bottom: 5px;
+.resultado {
+    width: 300px;
+    display: none;
+    border: 1px dotted #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.title-wrapper-catalog p{
-  font-size:1.4em;
-  
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
 }
 
-section .card-wrapper{
-  max-width: 1000px;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  grid-gap: 30px;
-  padding-top: 50px;
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
 }
 
-section .card-item{
-  height: 400px;
-  background: var(--gray);
-  border-radius: 13px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+.aviso {
+    color: #FFF;
+    padding-top: 20px;
 }
 
-.card-content{
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.card-item img{
-  
-  max-height: 200px;
-  width: 83%;
-  border-radius: 25px;
-}
-
-.card-item h4{
-  width: 90%;
-  
-}
-
-.card-item p{
-  margin-top: 0px;
-  width: 100%;
-  font-style: italic;
-  color: #00000070;
-
-}
-
-.card-item button{
-  min-width: 250px;
-  max-width: 250px;
-  width: 90%;
-  padding: 3px 0px;
-  border: none;
-  background: var(--black);
-  border-radius: 25px;
-  color: #66f5ff;
-  font-weight: bold;
-  font-size: 1.1em;
-  cursor:pointer;
-  transition: 0.3s ease;
-  margin-bottom: 14%;
-  
-  
-}
-
-.card-item button:hover{
-  background: var(--gray);
-  color: var(--black);
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
 }

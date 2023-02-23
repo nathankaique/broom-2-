@@ -1,102 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt">
- <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>nathan</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <div class="content">
-        <nav>
-          <p class="brand">Max<strong>Broom</strong></p>
-          <ul>
-            <li><a href="#catalog">Catálogo</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#features">Caracerísticas</a></li>
-            <button>Login</button>
-            
-          </ul>
-        </nav>
-        <div class="header-block">
-          <div class="text">
-            <h2>vassouras resistentes!</h2>
-            <p>aqui voçê pode achar vassouras de qualidade, que as mães adoram.</p>
-          </div>
-          <img src="images/broom.jpg" alt="vassouras">
-        </div>
-      </div>  
-    </header>
-    <section class="catalog" id="catalog">
-      <div class="content">
-        <div class="title-wrapper-catalog">
-          <p>encontre vassouras sem sair de casa.</p>
-          <h3>Catálogo</h3>  
-        </div>
-        <div class="filter-card">
-          <input type="text" class="search-input" placeholder="escolha alguma opção de vassoura para voçê...">
-          <button class="search-button">
-            Procurar
-          </button>
-        </div>
-        <div class="card-wrapper">
-          <div class="card-item">
-            <img src="images/vassouranoviça.jpg" alt="vassoura noviça">
-            <div class="card-content">
-              <h3>Noviça</h3>
-              <p>Ela tem as cerdas pequenas com pontas suaves, que são perfeitas para pisos secos e delicados, pois evitam arranhões indesejáveis.</p>
-              <button type="button">selecionar</button>
-            </div>
-          </div>          
-          <div class="card-item">
-            <img src="images/VassouraPiaçava.jpg" alt="vassoura Piaçava">
-            <div class="card-content">
-              <h3>Piaçava</h3>
-              <p>elas são mais espessas e oferecem maior resistência em pisos rústicos, sem perder a sua boa durabilidade, que é um diferencial.</p>
-              <button type="button">selecionar</button>
-            </div>
-          </div>          
-          <div class="card-item">
-            <img src="images/VassouradePalha.png" alt="vassoura de palha">
-            <div class="card-content">
-              <h3>Vassoura de Palha</h3>
-              <p> este é um modelo ideal para quem está procurando uma vassoura para limpar pátios e pisos externos, eliminando a sujeira que se acumula nestes locais.</p>
-              <button type="button">selecionar</button>
-            </div>
-          </div>          
-          <div class="card-item">
-            <img src="images/VassouraVarryCasa.jpg" alt=vassoura para casa">
-            <div class="card-content">
-              <h3>Varry</h3>
-              <p>Essa vassoura tem como um dos diferenciais uma escova larga, que conta com mais cerdas. Além disso, as fibras são feitas de PET reciclado, que é uma resina mais firme e funcional do que as cerdas naturais.</p>
-              <button type="button">selecionar</button>
-            </div>
-          </div>         
-          <div class="card-item">
-            <img src="images/VassouraPhenix.jpg" alt="Vassoura Phenix">
-            <div class="card-content">
-              <h3>Phenix Santa Maria</h3>
-              <p>Quando se fala em vassoura Santa Maria, temos uma opção que está nos lares brasileiros há mais de 60 anos. Esse modelo conta com cabo de metal, que tem alta flexibilidade. Além disso, as cerdas são de plástico, então funcionam como um curinga para a limpeza.</p>
-              <button type="button">selecionar</button>
-            </div>
-          </div>         
-          <div class="card-item">
-            <img src="images/VassouraSweeperMaxClean.jfif" alt="Sweeper Max Clean">
-            <div class="card-content">
-              <h3>Sweeper Max Clean</h3>
-              <p>Seu uso é indicado para superfícies lisas, como os pisos de madeira, mármore ou de borracha. É uma vassoura mágica com 2 escovas giratórias e outra central com rotação 360º que capturam sujeiras leves como o pó.</p>
-              <button type="button">selecionar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Clima</h1>
 
+    <form class="busca">
+        <input type="search" id="searchInput" />
+        <button>Buscar</button>
+    </form>
 
+    <div class="resultado">
+        <div  id="titulo" class="titulo">--</div>
 
+        <div class="info">
+            <div class="temp">
+                <div class="tempTitulo">Temperatura</div>
+                <div class="tempInfo">-- <sup>ºC</sup></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+            </div>
+            <div class="vento">
+                <div class="ventoTitulo">Vento</div>
+                <div class="ventoInfo">-- <span>km/h</span></div>
+                <div class="ventoArea">
+                    <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aviso"></div>
+
+    <footer>Criado pela B7Web</footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
-
-
-              
