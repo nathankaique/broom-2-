@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000a8f;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 100px;
+}
+
+.aluno {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+p{
+    color: #000a8f;
+}
+
+.aluno img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 30%;
+    border-radius: 6px;
+}
+
+.aluno h2 {
+    text-align: center;
+    color: #000a8f;
+    margin-bottom: 10px;
+}
+
+.aluno p {
+    margin: 5px 0;
+}
+
+.aluno strong {
+    font-weight: bold;
+}
